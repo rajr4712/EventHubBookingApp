@@ -98,7 +98,7 @@ const seedDatabase = async () => {
         const hashedUsers = users.map(u => ({
             ...u,
             password: bcrypt.hashSync(u.password, salt),
-            isVerified: true  //bypass the otp verification of all user credential when login(its already verified)
+            isVerified: true  //bypass the otp verification of all user credential when login(its already)
         }));
 
         const createdUsers = await User.insertMany(hashedUsers);

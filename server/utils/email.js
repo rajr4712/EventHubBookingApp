@@ -6,6 +6,7 @@ dotenv.config();
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
 console.log("EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
 
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -108,7 +109,7 @@ const sendOTPEmail = async (userEmail, otp, type) => {
 
     console.log("✅ OTP email sent successfully");
     console.log("Message ID:", info.messageId);
-    
+
   } catch (error) {
     console.error("❌ Error sending OTP email:");
     console.error(error);

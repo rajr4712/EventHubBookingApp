@@ -29,6 +29,7 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+
     const register = async (name, email, password) => {
         try {
             const { data } = await api.post('/auth/register', { name, email, password });
@@ -38,6 +39,7 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+    
     const verifyOTP = async (email, otp) => {
         try {
             const { data } = await api.post('/auth/verify-otp', { email, otp });

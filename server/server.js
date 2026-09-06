@@ -36,5 +36,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+
+
 //O.O.O.O:  Render(WHERE nodejs and express js code i.e backend code stored)
 //  to receive external HTTP traffic. Render specifically recommends binding web services to 0.0.0.0
