@@ -150,7 +150,7 @@ const EventDetail = () => {
                             disabled={isSoldOut || bookingLoading || (showOTP && !otp)}
                             className={`w-full py-4 px-6 rounded-xl font-bold text-lg transition shadow-lg ${isSoldOut || (successMsg && !showOTP)
                                 ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                                : 'bg-gray-900 hover:bg-black text-white hover:shadow-xl hover:-translate-y-1'
+                                : ' bg-[#5003C0] hover:bg-[#3F0299] text-white hover:shadow-xl hover:-translate-y-1'
                                 }`}
                         >
                             {bookingLoading ? 'Processing...' : (showOTP ? 'Verify OTP & Confirm' : (successMsg && !showOTP ? 'Request Sent' : (isSoldOut ? 'Sold Out' : 'Confirm Registration')))}

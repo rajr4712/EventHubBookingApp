@@ -30,11 +30,11 @@ const Home = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <div className="relative bg-black text-white rounded-3xl overflow-hidden mb-12 shadow-2xl">
+            <div className="relative bg-[#5003C0] text-white rounded-3xl overflow-hidden mb-12 shadow-2xl">
                 <div className="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=3000&auto=format&fit=crop')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
                 <div className="relative p-10 md:p-20 text-center flex flex-col items-center z-10">
-                    <span className="bg-white/20 text-white backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-white/20">Welcome to Eventora</span>
+                    <span className="bg-white/20 text-white backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-white/20">Welcome to EventHub</span>
                     <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight drop-shadow-lg">
                         Find Your Next <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">Unforgettable</span> Experience
                     </h1>
@@ -59,26 +59,29 @@ const Home = () => {
             {/* Why Choose Us / Features row */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 px-4">
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-300">
-                    <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
+                    <div className="w-16 h-16 bg-[#5003C0] text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
                         <FaRegClock />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Booking</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">Secure your tickets instantly with our fast streamlined booking infrastructure built for speed.</p>
                 </div>
+                
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-300">
-                    <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
+                    <div className="w-16 h-16 bg-[#5003C0] text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
                         <FaTicketAlt />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">Seamless Access</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">Download tickets instantly or manage them right from your personal dashboard with easily.</p>
                 </div>
+
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-300">
-                    <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
+                    <div className="w-16 h-16 bg-[#5003C0]  text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
                         <FaShieldAlt />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Platform</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">All transactions and registrations are bounded by cutting-edge security and 2FA OTP tech.</p>
                 </div>
+
             </div>
 
             <div className="flex items-center justify-between mb-8 px-2 border-b border-gray-200 pb-4">
